@@ -1,0 +1,52 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: blue;
+}
+
+textarea {
+  resize: none;
+}
+
+div {
+  display: flex;
+}
+
+#entrada {
+  padding: 5px;
+  position: relative;
+  background-color: aqua;
+  place-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+#salida {
+  padding: 5px, 5px, 5px, 5px;
+  position: relative;
+  background-color: blueviolet;
+  display: flex;
+  place-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.container {
+  margin: 5px;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  background-color: brown;
+  background-size: cover;
+  height: 100vh;
+}
+button {
+  width: 20%;
+  height: 5%;
+  border-radius: 15px;
+}
+#encriptar {
+  background-color: aqua;
+  color: black;
+}
