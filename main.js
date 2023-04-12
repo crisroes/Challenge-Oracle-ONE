@@ -13,6 +13,7 @@ function encriptarTexto() {
       textoEncriptado = textoEncriptado + textoEntrada[x];
     }
   }
+  mostrarTexto(textoEncriptado);
 }
 function buscarVocal(elemento) {
   for (let y = 0; y < 5; y++) {
@@ -22,4 +23,9 @@ function buscarVocal(elemento) {
     }
   }
   return false;
+}
+
+function mostrarTexto(texto) {
+  let textoSalida = document.getElementById("textoSalida");
+  textoSalida.textContent = texto;
 }
