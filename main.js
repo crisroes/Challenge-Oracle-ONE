@@ -1,10 +1,9 @@
 var vocales = ["a", "e", "i", "o", "u"];
 var code = ["ai", "enter", "imes", "ober", "ufat"];
-var textoEncriptado = "";
 
 function encriptarTexto() {
-  var textoEntrada = document.getElementById("textoEntrada").value;
-  var t = textoEntrada.replace("a", "ai");
+  let textoEncriptado = "";
+  let textoEntrada = document.getElementById("textoEntrada").value;
   for (var x = 0; x < textoEntrada.length; x++) {
     if (buscarVocal(textoEntrada[x])) {
       textoEncriptado = textoEncriptado + buscarVocal(textoEntrada[x]);
@@ -14,15 +13,19 @@ function encriptarTexto() {
       textoEncriptado = textoEncriptado + textoEntrada[x];
     }
   }
-
-  console.log(textoEncriptado);
+  mostrarTexto(textoEncriptado);
 }
 function buscarVocal(elemento) {
-  for (var y = 0; y < 5; y++) {
+  for (let y = 0; y < 5; y++) {
     if (elemento == vocales[y]) {
       return code[y];
       break;
     }
   }
   return false;
+}
+
+function mostrarTexto(texto) {
+  let textoSalida = document.getElementById("textoSalida");
+  textoSalida.textContent = texto;
 }
