@@ -1,1 +1,3 @@
-function encriptarTexto() {}
+function encriptarTexto() {
+  var textoEntrada = document.getElementById("textoEntrada");
+}
