@@ -47,7 +47,7 @@ function desencriptarTexto() {
     }
     contador = contador + 1;
   }
-  console.log(textoDesencriptado);
+  mostrarTexto(textoDesencriptado);
 }
 function buscarCodigo(elemento) {
   for (let y = 0; y < 5; y++) {
