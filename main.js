@@ -29,3 +29,5 @@ function mostrarTexto(texto) {
   let textoSalida = document.getElementById("textoSalida");
   textoSalida.textContent = texto;
 }
+
+function desencriptarTexto() {}
