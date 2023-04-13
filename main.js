@@ -30,4 +30,6 @@ function mostrarTexto(texto) {
   textoSalida.textContent = texto;
 }
 
-function desencriptarTexto() {}
+function desencriptarTexto() {
+  let textoEntrada = document.getElementById("textoEntrada").value;
+}
