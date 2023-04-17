@@ -58,3 +58,8 @@ function buscarCodigo(elemento) {
   }
   return false;
 }
+
+function copiar() {
+  let texto = document.getElementById("textoSalida").innerText;
+  navigator.clipboard.writeText(texto);
+}

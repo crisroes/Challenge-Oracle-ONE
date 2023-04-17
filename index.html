@@ -12,21 +12,45 @@
 </head>
 
 <body>
-  <h1>Encriptador de Texto</h1>
   <div class="container">
-    <section id="entrada" class="flex-item">
-      <textarea id="textoEntrada" cols="50" rows="20" required="true"
-        placeholder="Ingrese el texto aqui"></textarea>
+    <h1>Encriptador de texto</h1>
+    <div class="container_1">
+      <div>
+        <section id="entrada">
+          <div id="card">
+            <div>
+              <textarea id="textoEntrada" cols="50" rows="20" required="true"
+                placeholder="Ingrese el texto aqui"></textarea>
+            </div>
+            <div>
+              <p>solo letras minusculas sin acento</p>
+            </div>
+            <div class="btn">
+              <button onclick="encriptarTexto()" id="encriptar">Encriptar</button>
+              <button onclick="desencriptarTexto()" id="desencriptar">Desencriptar</button>
+            </div>
+          </div>
+        </section>
+      </div>
+      <div>
+        <section id="salida">
+          <div id="card">
+            <div>
+              <p id="textoSalida"></p>
+            </div>
+            <div>
+              <button onclick="copiar()" id="copy">Copiar</button>
+            </div>
+          </div>
 
-      <p>solo letras minusculas sin acento</p>
-      <button onclick="encriptarTexto()"  id="encriptar">Encriptar</button>
-      <button onclick="desencriptarTexto()" id="desencriptar">Desencriptar</button>
-    </section>
-    <section id="salida">
-      <label id="textoSalida" ></label>
-    </section>
-
-
+        </section>
+      </div>
+    </div>
+    <div class="footer">
+      <div>
+        <strong>@cristian romero escobar</strong>
+      </div>
+    </div>
   </div>
 </body>
 
