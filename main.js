@@ -1,6 +1,5 @@
 var vocales = ["a", "e", "i", "o", "u"];
 var codigo = ["ai", "enter", "imes", "ober", "ufat"];
-
 function encriptarTexto() {
   var textoEncriptado = "";
   let textoEntrada = document.getElementById("textoEntrada").value;
@@ -14,6 +13,7 @@ function encriptarTexto() {
     }
   }
   mostrarTexto(textoEncriptado);
+  document.getElementById("img").style.display = "none";
 }
 function buscarVocal(elemento) {
   for (let y = 0; y < 5; y++) {
@@ -48,6 +48,7 @@ function desencriptarTexto() {
     contador = contador + 1;
   }
   mostrarTexto(textoDesencriptado);
+  document.getElementById("img").style.display = "none";
 }
 function buscarCodigo(elemento) {
   for (let y = 0; y < 5; y++) {

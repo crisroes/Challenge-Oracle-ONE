@@ -13,7 +13,10 @@
 
 <body>
   <div class="container">
-    <h1>Encriptador de texto</h1>
+    <div class="menu">
+      <img id="logo" src="./img/logo.jpeg" alt="">
+      <h1>Encriptador de Texto</h1>
+    </div>
     <div class="container_1">
       <div>
         <section id="entrada">
@@ -22,8 +25,9 @@
               <textarea id="textoEntrada" cols="50" rows="20" required="true"
                 placeholder="Ingrese el texto aqui"></textarea>
             </div>
-            <div>
-              <p>solo letras minusculas sin acento</p>
+            <div class="aviso_container">
+              <img class="aviso" src="./img/signo-de-exclamacion.png" alt="">
+              <p id="msg_validate">solo letras minusculas sin acento</p>
             </div>
             <div class="btn">
               <button onclick="encriptarTexto()" id="encriptar">Encriptar</button>
@@ -36,6 +40,11 @@
         <section id="salida">
           <div id="card">
             <div>
+              <div id="img">
+                <img  src="./img/Curious-bro.png" alt="imagen">
+                <label><strong>Ningún mensaje fue encontrado </strong></label>
+                <p id="msg_ingrese">ingrese el texto que desees encriptar o desencriptar</p>
+              </div>
               <p id="textoSalida"></p>
             </div>
             <div>
@@ -48,7 +57,7 @@
     </div>
     <div class="footer">
       <div>
-        <strong>@cristian romero escobar</strong>
+        <strong>Cristian Romero Escobar</strong>
       </div>
     </div>
   </div>
