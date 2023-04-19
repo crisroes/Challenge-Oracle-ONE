@@ -13,7 +13,7 @@ function encriptarTexto() {
     }
   }
   mostrarTexto(textoEncriptado);
-  document.getElementById("img").style.display = "none";
+  ocultarImagen();
 }
 function buscarVocal(elemento) {
   for (let y = 0; y < 5; y++) {
@@ -29,7 +29,9 @@ function mostrarTexto(texto) {
   let textoSalida = document.getElementById("textoSalida");
   textoSalida.textContent = texto;
 }
-
+function ocultarImagen() {
+  document.getElementById("img").style.display = "none";
+}
 function desencriptarTexto() {
   let textoDesencriptado = "";
   let textoEntrada = document.getElementById("textoEntrada").value;
@@ -48,7 +50,7 @@ function desencriptarTexto() {
     contador = contador + 1;
   }
   mostrarTexto(textoDesencriptado);
-  document.getElementById("img").style.display = "none";
+  ocultarImagen();
 }
 function buscarCodigo(elemento) {
   for (let y = 0; y < 5; y++) {

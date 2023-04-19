@@ -13,14 +13,13 @@
 
 <body>
   <div class="container">
-    <div class="menu">
-      <img id="logo" src="./img/logo.jpeg" alt="">
+    <header>
+      <img id="logo" src="./img/logo.jpeg">
       <h1>Encriptador de Texto</h1>
-    </div>
-    <div class="container_1">
-      <div>
+    </header>
+    <main class="main">
         <section id="entrada">
-          <div id="card">
+          <div class="card">
             <div>
               <textarea id="textoEntrada" cols="50" rows="20" required="true"
                 placeholder="Ingrese el texto aqui"></textarea>
@@ -35,13 +34,11 @@
             </div>
           </div>
         </section>
-      </div>
-      <div>
         <section id="salida">
-          <div id="card">
+          <div class="card">
             <div>
               <div id="img">
-                <img  src="./img/Curious-bro.png" alt="imagen">
+                <img src="./img/Curious-bro.png" alt="imagen">
                 <label><strong>Ningún mensaje fue encontrado </strong></label>
                 <p id="msg_ingrese">ingrese el texto que desees encriptar o desencriptar</p>
               </div>
@@ -51,15 +48,11 @@
               <button onclick="copiar()" id="copy">Copiar</button>
             </div>
           </div>
-
         </section>
-      </div>
-    </div>
-    <div class="footer">
-      <div>
-        <strong>Cristian Romero Escobar</strong>
-      </div>
-    </div>
+    </main>
+    <footer class="footer">
+      <strong>Cristian Romero Escobar</strong>
+    </footer>
   </div>
 </body>
 
