@@ -22,6 +22,7 @@ header {
 h1 {
   padding: 0em;
   margin: 0em;
+  color: #b0dbff;
 }
 
 #logo {
@@ -77,6 +78,7 @@ textarea {
   height: 30em;
   background-color: #b0dbff;
   border-radius: 15px;
+  color: #415a90;
 }
 
 button {
@@ -85,6 +87,10 @@ button {
   height: 3em;
   position: inherit;
   border-radius: 15px;
+  color: #415a90;
+}
+button:hover {
+  border-color: #7597ee;
 }
 
 strong {
@@ -93,6 +99,7 @@ strong {
 }
 textarea::placeholder {
   font-size: larger;
+  color: #415a90;
 }
 img {
   padding: 2em;
@@ -101,15 +108,16 @@ img {
 }
 label {
   font-size: large;
+  color: #415a90;
 }
 
-.footer {
+footer {
   padding: 0px;
-  padding-top: 3em;
+  padding-top: 1em;
   margin: 0px;
   background-color: #415a90;
   width: 100%;
-  height: 5em;
+  height: 4em;
   place-items: center;
   justify-content: center;
   text-align: center;
@@ -127,7 +135,7 @@ label {
   display: flex;
   padding-right: 0.2em;
 }
-.aviso_container {
+.aviso-container {
   display: flex;
   justify-content: center;
   text-align: center;
@@ -135,14 +143,16 @@ label {
   align-items: center;
 }
 
-#msg_validate {
+#msg-validate {
   font-size: smaller;
   display: flex;
   opacity: 0.6;
+  color: #b0dbff;
 }
 
-#msg_ingrese {
+#msg-ingrese {
   font-size: smaller;
+  color: #415a90;
 }
 
 #img {
@@ -171,6 +181,7 @@ label {
 #encriptar {
   background-color: #7597ee;
   background-size: cover;
+  color: #b0dbff;
 }
 
 #textoSalida {
@@ -179,6 +190,12 @@ label {
   height: 24em;
   border-radius: 15px;
   background-color: #b0dbff;
+  color: #415a90;
+}
+
+#copyright {
+  color: #b0dbff;
+  font-size: 13px;
 }
 
 @media (min-width: 600px) {
