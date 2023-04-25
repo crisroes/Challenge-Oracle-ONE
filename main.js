@@ -1,8 +1,22 @@
 var vocales = ["a", "e", "i", "o", "u"];
 var codigo = ["ai", "enter", "imes", "ober", "ufat"];
+function removerAcentos(texto) {
+  return texto.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+}
+function removerCaracteresEspeciales(texto) {
+  return texto.replace(/[^0-9a-zA-Z. ]/g, "");
+}
+
+function validarTexto(texto) {
+  texto = removerAcentos(texto);
+  texto = removerCaracteresEspeciales(texto);
+  return texto.toLowerCase();
+}
+
 function encriptarTexto() {
   var textoEncriptado = "";
   let textoEntrada = document.getElementById("textoEntrada").value;
+  textoEntrada = validarTexto(textoEntrada);
   for (let x = 0; x < textoEntrada.length; x++) {
     if (buscarVocal(textoEntrada[x])) {
       textoEncriptado = textoEncriptado + buscarVocal(textoEntrada[x]);
@@ -35,6 +49,7 @@ function ocultarImagen() {
 function desencriptarTexto() {
   let textoDesencriptado = "";
   let textoEntrada = document.getElementById("textoEntrada").value;
+  textoEntrada = validarTexto(textoEntrada);
   let contador = 0;
   while (contador < textoEntrada.length) {
     let item = buscarVocal(textoEntrada[contador]);
